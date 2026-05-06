@@ -2,63 +2,79 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kamey Tshinyam Parfait — Portfolio</title>
-
-    <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title data-key="homeTitle">Kamey Tshinyam — Développeur Fullstack</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="home">
+    <nav>
+        <div class="brand" data-key="brand"><strong>Kamey Tshinyam</strong></div>
+        <div class="menu">
+            <a href="index.html" data-key="home">Accueil</a>
+            <a href="cv.html" data-key="cv">CV</a>
+            <a href="projet.html" data-key="projects">Projets</a>
+            <a href="contact.html" data-key="contact">Contact</a>
 
-    <!-- NAVIGATION -->
-    <nav class="navbar">
-        <div class="logo">Kamey Tshinyam Parfait</div>
-        <div class="nav-links">
-            <a href="index.html">Accueil</a>
-            <a href="cv.html">CV</a>
-            <a href="projet.html">Projets</a>
-            <a href="contact.html">Contact</a>
+            <button id="lang-switch" class="lang-btn">EN</button>
         </div>
     </nav>
 
-    <!-- HERO -->
-    <section class="hero">
-
-        <img src="profil.jpeg" class="hero-img" alt="Photo">
-
-        <h1 class="title">Kamey Tshinyam Parfait</h1>
-        <p class="subtitle">Concepteur et Développeur Web • Création de sites et applications modernes & responsive</p>
+    <header class="header-info">
+        <div class="profile-container">
+            <img src="images/photo.png" alt="Photo de profil de Parfait Kamey" class="profile-pic">
+        </div>
+        <h1 class="title" data-key="fullname">Kamey Tshinyam Parfait</h1>
+        <!-- Mise à jour du sous-titre pour correspondre au CV -->
+        <p class="subtitle" data-key="welcome">Développeur Fullstack | Expert AdonisJS & Design UI/UX</p>
 
         <div class="socials">
-            <a href="https://www.linkedin.com/in/parfait-kamey-5a0240247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                target="_blank">LinkedIn</a>
-            <a href="https://www.linkedin.com/in/parfait-kamey-5a0240247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                target="_blank">Instagram</a>
-            <a href="https://x.com/KameyParfa27596?t=TW4e1vmAdG98GqiRmqD7cg&s=09" target="_blank">X</a>
+            <a href="https://x.com/..." target="_blank">X</a>
+            <a href="https://www.linkedin.com/in/..." target="_blank">LinkedIn</a>
+            <a href="https://github.com/..." target="_blank">GitHub</a> <!-- Ajout indispensable pour un dev -->
         </div>
+    </header>
 
-        <div class="buttons">
-            <a href="cv.html" class="btn">Voir mon CV</a>
-            <a href="projet.html" class="btn">Mes projets</a>
-            <a href="contact.html" class="btn secondary">Me contacter</a>
-        </div>
+    <main class="main-card">
+        <section class="section">
+            <h2 class="about-title" data-key="aboutTitle">À propos</h2>
+            <p class="about-text" data-key="aboutText">
+                Développeur passionné par l'alliance entre le design et la performance.
+                Spécialisé en <strong>Node.js et AdonisJS</strong>, j'intègre l'IA au cœur de mon workflow pour créer
+                des solutions web et mobiles innovantes.
+                Mon parcours humanitaire guide mon approche : coder avec éthique et sens.
+            </p>
+        </section>
 
-        <p class="intro">
-            👋 Bienvenue ! Je suis développeur Web passionné par le design, l’expérience utilisateur
-            et le développement moderne. Explore mon univers sur mes autres pages.
-        </p>
+        <section class="section">
+            <h2 data-key="featured">Projets Phares</h2>
+            <div class="project-grid"> <!-- Utilise une grid pour le responsive -->
+                <div class="project">
+                    <h3 data-key="project1Title">Clone de X (Twitter)</h3>
+                    <p data-key="project1Text">Réplique dynamique optimisée pour mobile avec une gestion fluide du DOM.
+                    </p>
+                </div>
+                <div class="project">
+                    <h3 data-key="project2Title">MAVILLE - Livraison</h3>
+                    <p data-key="project2Text">Plateforme e-commerce complète développée sous AdonisJS avec une
+                        architecture SQL robuste.</p>
+                </div>
+            </div>
+            <a class="btn" href="projet.html" data-key="seeProjects">Découvrir tous mes projets</a>
+        </section>
 
-    </section>
+        <section class="section">
+            <h2 data-key="quickContact">Me contacter</h2>
+            <p>Email : <a href="mailto:tshinyamp8@gmail.com">tshinyamp8@gmail.com</a></p>
+            <p data-key="phoneText">Téléphone : +243 854772265</p>
+            <a class="btn" href="contact.html" data-key="contactBtn">Démarrer un projet</a>
+        </section>
+    </main>
 
-    <footer>
-        © 2025 — Kamey Tshinyam Parfait
-    </footer>
-
+    <footer data-key="footer">© 2026 — Kamey Tshinyam Parfait</footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

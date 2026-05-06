@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projets — Kamey Tshinyam Parfait</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="page">
+<body class="page projects-page">
 
     <nav class="navbar">
-        <div class="logo">Kamey Tshinyam Parfait</div>
+        <div class="logo"><strong>Kamey Tshinyam</strong></div>
         <div class="nav-links">
             <a href="index.html">Accueil</a>
             <a href="cv.html">CV</a>
@@ -20,24 +21,53 @@
         </div>
     </nav>
 
-
     <main class="card">
-        <h1>Mes Projets</h1>
+        <header class="section-header">
+            <h1>Mes Réalisations</h1>
+            <p>Découvrez une sélection de mes travaux, mêlant architecture robuste et interfaces soignées.</p>
+        </header>
 
-        <div class="project-box">
-            <h3>Portfolio Personnel</h3>
-            <p>Site Web moderne réalisé en HTML / CSS avec un design premium.</p>
+        <div class="projects-grid">
+            <!-- Projet 1 : MAVILLE -->
+            <div class="project-box highlight">
+                <div class="project-tag">Fullstack / AdonisJS</div>
+                <h3>MAVILLE — Livraison</h3>
+                <p>Plateforme e-commerce pour supermarchés. Modélisation de base de données complexe (SQL) et gestion
+                    des flux de commandes via une API structurée.</p>
+            </div>
+
+            <!-- Projet 2 : Clone X -->
+            <div class="project-box">
+                <div class="project-tag">Frontend / UI-UX</div>
+                <h3>Clone de X (Twitter)</h3>
+                <p>Réplique de l'interface sociale avec focus sur le <strong>Responsive Design</strong> et la
+                    manipulation dynamique du DOM en JavaScript.</p>
+            </div>
+
+            <!-- Projet 3 : URL Shortener -->
+            <div class="project-box">
+                <div class="project-tag">Backend / Node.js</div>
+                <h3>URL Shortener</h3>
+                <p>Outil de réduction de liens avec logique de hachage unique et redirection serveur efficace.</p>
+            </div>
+
+            <!-- Projet 4 : Portfolio -->
+            <div class="project-box">
+                <div class="project-tag">Design / Figma</div>
+                <h3>Portfolio Personnel</h3>
+                <p>Conception d'un univers visuel moderne (Glassmorphism) et intégration propre en HTML/CSS.</p>
+            </div>
         </div>
 
-        <div class="project-box">
-            <h3>Projet à venir</h3>
-            <p>Plus de projets seront ajoutés prochainement.</p>
+        <div class="github-cta">
+            <p>Retrouvez l'intégralité de mon code sur mon GitHub.</p>
+            <a href="https://github.com/ton-pseudo" class="btn" target="_blank">Voir mon GitHub</a>
         </div>
-
     </main>
 
-    <footer>© 2025 — Kamey Tshinyam Parfait</footer>
+    <footer>© 2026 — Kamey Tshinyam Parfait</footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>

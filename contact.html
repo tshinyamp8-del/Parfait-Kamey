@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact — Kamey Tshinyam Parfait</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body class="page contact-page">
 
     <nav class="navbar">
-        <div class="logo">Kamey Tshinyam Parfait</div>
+        <div class="logo"><strong>Kamey Tshinyam</strong></div>
         <div class="nav-links">
             <a href="index.html">Accueil</a>
             <a href="cv.html">CV</a>
@@ -20,41 +21,52 @@
         </div>
     </nav>
 
-
     <main class="card">
-        <h1>Contact</h1>
-
-        <p>Vous pouvez me contacter via email ou en utilisant le formulaire ci-dessous :</p>
+        <header class="section-header">
+            <h1>Parlons de votre projet</h1>
+            <p>Que ce soit pour une collaboration technique, une question sur <strong>AdonisJS</strong> ou un projet à
+                fort impact social, je vous répondrai avec plaisir.</p>
+        </header>
 
         <form class="contact-form">
-            <label>Nom</label>
-            <input type="text" placeholder="Votre nom">
+            <div class="form-group">
+                <label>Nom</label>
+                <input type="text" placeholder="Votre nom" required>
+            </div>
 
-            <label>Email</label>
-            <input type="email" placeholder="Votre adresse email">
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="Votre adresse email" required>
+            </div>
 
-            <label>Objet</label>
-            <input type="text" placeholder="Sujet du message">
+            <div class="form-group">
+                <label>Sujet</label>
+                <input type="text" placeholder="Comment puis-je vous aider ?">
+            </div>
 
-            <label>Message</label>
-            <textarea placeholder="Votre message ici..."></textarea>
+            <div class="form-group">
+                <label>Message</label>
+                <textarea placeholder="Décrivez brièvement votre besoin..." rows="5" required></textarea>
+            </div>
 
-            <button type="submit" class="btn send">Envoyer</button>
+            <button type="submit" class="btn send">Envoyer le message</button>
         </form>
 
-        <p style="margin-top:20px;">
-            📩 Email direct :
-            <a href="mailto:tshinyamp8@gmail.com">tshinyamp8@gmail.com</a><br>
-            📩 Secondaire :
-            <a href="mailto:tshinyamp8@yahoo.com">tshinyam@yahoo.com</a><br>
-            📞 Téléphone : +243 854772265
-        </p>
-
+        <div class="contact-info">
+            <div class="info-item">
+                <span>📩 Email direct :</span>
+                <a href="mailto:tshinyamp8@gmail.com">tshinyamp8@gmail.com</a>
+            </div>
+            <div class="info-item">
+                <span>📞 Téléphone :</span>
+                <a href="tel:+243854772265">+243 854 772 265</a>
+            </div>
+        </div>
     </main>
 
+    <footer>© 2026 — Kamey Tshinyam Parfait</footer>
 
-    <footer>© 2025 — Kamey Tshinyam Parfait</footer>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
